@@ -10,6 +10,5 @@ vim.o.smartindent = true
 vim.o.tabstop = 4
 vim.o.shiftwidth = 4
 vim.o.number = true
-vim.o.nowrap = true
 vim.o.timeout = true
 vim.o.timeoutlen = 300
