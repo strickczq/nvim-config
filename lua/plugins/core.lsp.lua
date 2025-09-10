@@ -7,7 +7,7 @@ return {
     {
         'williamboman/mason-lspconfig.nvim',
         opts = {
-            ensure_installed = { 'lua_ls', 'biome' },
+            ensure_installed = { 'lua_ls' },
             automatic_installation = false,
         },
     },
@@ -28,6 +28,7 @@ return {
                 },
                 biome = {},
                 zls = {},
+                sourcekit = {},
             }
         },
         config = function(_, opts)

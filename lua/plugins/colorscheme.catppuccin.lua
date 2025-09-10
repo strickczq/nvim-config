@@ -5,18 +5,18 @@ return {
             flavour = 'mocha',
             term_colors = true,
             transparent_background = true,
-            color_overrides = {},
-            highlight_overrides = {
-                mocha = function(C)
-                    return {
-                        TabLineSel = { bg = C.pink },
-                        CmpBorder = { fg = C.surface2 },
-                        Pmenu = { bg = C.none },
-                        TelescopeBorder = { link = 'FloatBorder' },
-                    }
-                end,
+            float = {
+                transparent = true,
+                solid = false,
             },
-            integrations = { blink_cmp = true },
+            color_overrides = {},
+            highlight_overrides = {},
+            default_integrations = true,
+            auto_integrations = false,
+            integrations = {
+                cmp = true,
+                snacks = { enabled = true }
+            }
         })
         vim.cmd.colorscheme 'catppuccin'
     end
